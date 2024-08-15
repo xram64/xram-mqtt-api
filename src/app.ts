@@ -1,10 +1,16 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import favicon from 'serve-favicon';
+import morgan from 'morgan';
+import path from 'path';
+
 const app = express();
+app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
+app.use(morgan('common'))
 app.use(bodyParser.json());  // Enable middleware to parse JSON requests
 
 import dotenv from 'dotenv';
-dotenv.config()
+dotenv.config();
 
 const port = process.env.API_PORT;
 

@@ -1,7 +1,7 @@
 {
   "name": "xram-mqtt-api",
   "author": "xram",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A REST API for the Mosquitto MQTT broker.",
   "main": "src/app.js",
   "scripts": {
@@ -14,11 +14,15 @@
   "private": true,
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
     "@types/node": "^22.3.0",
+    "@types/serve-favicon": "^2.5.7",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
